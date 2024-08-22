@@ -34,12 +34,15 @@
             colors: {
               btnPrimary: "#ABEF5F",
               btnSecondary: "rgba(171, 239, 95, 0.5)",
+
               textOne: "#212121",
               textTwo: "#1C1C1C",
               textThree: "#494949",
               textFour: "#737373",
+
               backGround: "#F5F5F5",
               bannerBg: "rgba(255, 255, 255, 0)",
+              aboutText: "rgba(0, 0, 0, 0.2)",
             },
             fontFamily: {
               manrope: "Manrope",
@@ -181,9 +184,71 @@
     </header>
 
     <main>
+      <!-- about us section  -->
+      <section class="w-11/12 lg:4/5 mx-auto py-24">
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row">
+            <!-- text part  -->
+            <div class="flex-1 space-y-6 ">
+              <!-- raw text -->
+              <div class="space-y-7 relative text-center lg:text-start">
+                <img class="absolute -top-16 -left-12 hidden lg:block" src="assets/Vector.png" alt=" arrow">
+                <a href="#" class="bg-white rounded-full space-x-1 px-3 py-2 ">
+                  <i class="fa-solid fa-arrow-right  text-textThree"></i>
+                  <span class="font-bold text-base text-textThree">About Us</span>
+                </a>
+                <h1 class="lg:text-4xl md:text-3xl text-2xl text-textOne font-extrabold ">
+                  We design thoughtful, liveable spaces
+                </h1>
+                <p class="font-medium md:text-base text-sm  text-textThree">
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents.
+                </p>
+              </div>
+              <!-- card-container  -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-7">
+                <!-- card one  -->
+                <div class="card card-side bg-white p-6 items-start lg:items-center">
+                  <img class="lg:w-16 w-10 h-10 lg:h-16" src="assets/commercial.png" alt="icon" />
+                  <div class="card-body py-0">
+                    <h2
+                      class="card-title text-textThree font-extrabold text-xl"
+                    >
+                      Commercial
+                    </h2>
+                    <p class="text-textFour">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
 
+                <!-- card two  -->
+                <div class="card card-side bg-white p-6 items-start lg:items-center ">
+                  <img class="lg:w-16 w-10 h-10 lg:h-16" src="assets/commercial.png" alt="icon" />
+                  <div class="card-body py-0">
+                    <h2
+                      class="card-title text-textThree font-extrabold text-xl"
+                    >
+                      Residential
+                    </h2>
+                    <p class="text-textFour">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-
+            <!-- image part  -->
+            <div class="flex-1 lg:w-auto w-full  ">
+              <img src="assets/Rectangle.png" class="rounded-lg w-full md:h-96 lg:h-auto h-56" />
+            </div>
+          </div>
+        </div>
+      </section>
       
     </main>
 
