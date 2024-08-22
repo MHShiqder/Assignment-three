@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bike zone using DaisyUI</title>
+    <title>Assignment Three</title>
     <!-- daisyUI and tailwind cdn  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -33,34 +33,160 @@
           extend: {
             colors: {
               btnPrimary: "#ABEF5F",
-              btnSecondary: 'rgba(171, 239, 95, 0.5)',
+              btnSecondary: "rgba(171, 239, 95, 0.5)",
               textOne: "#212121",
               textTwo: "#1C1C1C",
               textThree: "#494949",
               textFour: "#737373",
+              backGround: "#F5F5F5",
+              bannerBg: "rgba(255, 255, 255, 0)",
             },
             fontFamily: {
-              manrope : "Manrope",
-            }
+              manrope: "Manrope",
+            },
           },
         },
       };
     </script>
   </head>
-  <body class="font-manrope">
-    <header>
+  <body class="font-manrope bg-backGround">
+    <header class="bg-gradient-to-b from-bannerBg to-white">
+      <!-- header container  -->
+      <div class="w-11/12 lg:4/5 mx-auto pb-12">
+        <!-- navbar part  -->
+        <nav>
+          <div class="navbar bg-backGround justify-between md:justify-normal">
+            <div class="navbar-start">
+              <a href="#" class="text-xl"
+                ><i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-btnPrimary rounded-full p-2 text-center"
+                ></i>
+                <span class="font-black text-2xl text-textOne"
+                  >Rinterio</span
+                ></a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li>
+                  <a
+                    class="hover:bg-backGround hover:font-extrabold hover:text-textThree text-textFour text-sm"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-backGround hover:font-extrabold hover:text-textThree text-textFour text-sm"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-backGround hover:font-extrabold hover:text-textThree text-textFour text-sm"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-backGround hover:font-extrabold hover:text-textThree text-textFour text-sm"
+                    >Blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-backGround hover:font-extrabold hover:text-textThree text-textFour text-sm"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden md:inline-flex gap-3 lg:gap-1">
+              <button class="text-xl">
+                <i
+                  class="fa-solid fa-magnifying-glass rounded-full lg:p-2 p-3 text-center bg-white border-[#E9E9E9] border-2 text-textFour"
+                ></i>
+              </button>
+              <button class="text-xl">
+                <i
+                  class="fa-solid fa-cart-shopping rounded-full lg:p-2 p-3 text-center bg-white border-[#E9E9E9] border-2 text-textFour"
+                ></i>
+              </button>
+              <button
+                class="btn rounded-full bg-btnPrimary hover:bg-btnSecondary hover:border-btnPrimary hover:border-2 p-2 px-3 gap-2 lg:gap-1"
+              >
+                <span class="font-black text-lg text-textOne"
+                  >Book Consult</span
+                >
+                <i
+                  class="fa-solid fa-arrow-right text-white -rotate-45 bg-textTwo rounded-full p-2 text-center"
+                ></i>
+              </button>
+            </div>
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn right-10 bg-white rounded-full lg:hidden ml-3 shadow-none border-[#E9E9E9] border-2"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-
+        <!-- hero section  -->
+        <div>
+          <div class="hero lg:bg-white min-h-screen">
+            <div class="hero-content text-center">
+              <div class="">
+                <img class="mx-auto px-10" src="assets/banner.png" alt="" />
+                <h1
+                  class="lg:text-6xl md:text-4xl text-3xl font-extrabold text-textOne md:px-6"
+                >
+                  A barn house of this design has a striking appearance
+                </h1>
+                <p
+                  class="py-6 px-6 lg:px-20 md:text-base text-sm font-medium text-textThree"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents, and large windows that flood the space with natural
+                  light.
+                </p>
+                <button
+                  class="btn rounded-full bg-btnSecondary border-btnPrimary border-2 p-2 px-4 gap-2 w-full sm:w-auto hover:bg-btnPrimary"
+                >
+                  <span class="font-black text-lg text-textOne"
+                    >View Details</span
+                  >
+                  <i
+                    class="fa-solid fa-arrow-right text-textTwo -rotate-45 rounded-full p-2 text-center bg-btnPrimary"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
+
+
+
       
-
     </main>
-    
-    <footer>
 
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
