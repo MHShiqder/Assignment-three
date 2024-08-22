@@ -34,6 +34,7 @@
             colors: {
               btnPrimary: "#ABEF5F",
               btnSecondary: "rgba(171, 239, 95, 0.5)",
+              btnTertiary: "rgba(171, 239, 95, 0.2)",
 
               textOne: "#212121",
               textTwo: "#1C1C1C",
@@ -43,6 +44,7 @@
               backGround: "#F5F5F5",
               bannerBg: "rgba(255, 255, 255, 0)",
               aboutText: "rgba(0, 0, 0, 0.2)",
+
               cardOne: "#E7C1D3",
               cardTwo: "#EFDA6E",
               cardThree: "#A4DAC3",
@@ -193,18 +195,26 @@
         <div class="hero">
           <div class="hero-content flex-col lg:flex-row">
             <!-- text part  -->
-            <div class="flex-1 space-y-6 ">
+            <div class="flex-1 space-y-6">
               <!-- raw text -->
               <div class="space-y-7 relative text-center lg:text-start">
-                <img class="absolute -top-16 -left-12 hidden lg:block" src="assets/Vector.png" alt=" arrow">
-                <a href="#" class="bg-white rounded-full space-x-1 px-3 py-2 ">
-                  <i class="fa-solid fa-arrow-right  text-textThree"></i>
-                  <span class="font-bold text-base text-textThree">About Us</span>
+                <img
+                  class="absolute -top-16 -left-12 hidden lg:block"
+                  src="assets/Vector.png"
+                  alt=" arrow"
+                />
+                <a href="#" class="bg-white rounded-full space-x-1 px-3 py-2">
+                  <i class="fa-solid fa-arrow-right text-textThree"></i>
+                  <span class="font-bold text-base text-textThree"
+                    >About Us</span
+                  >
                 </a>
-                <h1 class="lg:text-4xl md:text-3xl text-2xl text-textOne font-extrabold ">
+                <h1
+                  class="lg:text-4xl md:text-3xl text-2xl text-textOne font-extrabold"
+                >
                   We design thoughtful, liveable spaces
                 </h1>
-                <p class="font-medium md:text-base text-sm  text-textThree">
+                <p class="font-medium md:text-base text-sm text-textThree">
                   The barn house captivates with its blend of rustic charm and
                   modern sophistication, featuring weathered wood, sleek metal
                   accents.
@@ -213,8 +223,14 @@
               <!-- card-container  -->
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-7">
                 <!-- card one  -->
-                <div class="card card-side bg-white p-6 items-start lg:items-center">
-                  <img class="lg:w-16 w-10 h-10 lg:h-16" src="assets/commercial.png" alt="icon" />
+                <div
+                  class="card card-side bg-white p-6 items-start lg:items-center"
+                >
+                  <img
+                    class="lg:w-16 w-10 h-10 lg:h-16"
+                    src="assets/commercial.png"
+                    alt="icon"
+                  />
                   <div class="card-body py-0">
                     <h2
                       class="card-title text-textThree font-extrabold text-xl"
@@ -229,8 +245,14 @@
                 </div>
 
                 <!-- card two  -->
-                <div class="card card-side bg-white p-6 items-start lg:items-center ">
-                  <img class="lg:w-16 w-10 h-10 lg:h-16" src="assets/commercial.png" alt="icon" />
+                <div
+                  class="card card-side bg-white p-6 items-start lg:items-center"
+                >
+                  <img
+                    class="lg:w-16 w-10 h-10 lg:h-16"
+                    src="assets/commercial.png"
+                    alt="icon"
+                  />
                   <div class="card-body py-0">
                     <h2
                       class="card-title text-textThree font-extrabold text-xl"
@@ -247,61 +269,183 @@
             </div>
 
             <!-- image part  -->
-            <div class="flex-1 lg:w-auto w-full  ">
-              <img src="assets/Rectangle.png" class="rounded-lg w-full md:h-96 lg:h-auto h-56" />
+            <div class="flex-1 lg:w-auto w-full">
+              <img
+                src="assets/Rectangle.png"
+                class="rounded-lg w-full md:h-96 lg:h-auto h-56"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!-- How we work section  -->
-       <section class="w-11/12 lg:4/5 mx-auto pb-20">
+      <section class="w-11/12 lg:4/5 mx-auto pb-20">
         <!-- raw text -->
         <div class="space-y-7 relative text-center w-2/3 mx-auto mb-10">
-          <a href="#" class="bg-white rounded-full space-x-1 px-3 py-2 ">
-            <i class="fa-solid fa-arrow-right  text-textThree"></i>
+          <a href="#" class="bg-white rounded-full space-x-1 px-3 py-2">
+            <i class="fa-solid fa-arrow-right text-textThree"></i>
             <span class="font-bold text-base text-textThree">How we work</span>
           </a>
-          <h1 class="lg:text-4xl md:text-3xl text-2xl text-textOne font-extrabold ">
+          <h1
+            class="lg:text-4xl md:text-3xl text-2xl text-textOne font-extrabold"
+          >
             Our Works Process
           </h1>
-          <p class="font-medium md:text-base text-sm  text-textThree">
-            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          <p class="font-medium md:text-base text-sm text-textThree">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
 
         <!-- card container  -->
-         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-6 ">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6">
+          <!-- card one  -->
+          <div class="bg-cardOne p-6 space-y-2 rounded-2xl">
+            <img src="assets/concept.png" alt="icon" />
+            <h2 class="card-title text-textTwo text-xl font-extrabold">
+              Concept
+            </h2>
+            <p class="text-textThree font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- card Two  -->
+          <div class="bg-cardTwo p-6 space-y-2 rounded-2xl">
+            <img src="assets/flow-chart.png" alt="icon" />
+            <h2 class="card-title text-textTwo text-xl font-extrabold">
+              Design Process
+            </h2>
+            <p class="text-textThree font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- card three  -->
+          <div class="bg-cardThree p-6 space-y-2 rounded-2xl">
+            <img src="assets/vision.png" alt="icon" />
+            <h2 class="card-title text-textTwo text-xl font-extrabold">
+              Supervision
+            </h2>
+            <p class="text-textThree font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <!-- card four  -->
+          <div class="bg-cardFour p-6 space-y-2 rounded-2xl">
+            <img src="assets/budget-planning.png" alt="icon" />
+            <h2 class="card-title text-textTwo text-xl font-extrabold">
+              Budget Planning
+            </h2>
+            <p class="text-textThree font-medium">
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+        </div>
+      </section>
 
-              <!-- card one  -->
-          <div class="bg-cardOne p-6 space-y-2 rounded-2xl">          
-            <img src="assets/concept.png" alt="icon">
-              <h2 class="card-title text-textTwo text-xl font-extrabold">Concept</h2>
-              <p class="text-textThree font-medium">The barn house captivates with its blend of rustic charm and modern.</p>          
+      <!-- portfolio section  -->
+      <section class="bg-white py-10">
+        <!-- width container  -->
+        <div class="w-11/12 lg:4/5 mx-auto">
+          <!-- raw text -->
+          <div class="space-y-7 relative text-center w-2/3 mx-auto pb-10">
+            <a href="#" class="bg-btnTertiary rounded-full space-x-1 px-3 py-2">
+              <i class="fa-solid fa-arrow-right text-textThree"></i>
+              <span class="font-bold text-base text-textThree"
+                >Explore our Latest works</span
+              >
+            </a>
+            <h1
+              class="lg:text-4xl md:text-3xl text-2xl text-textOne font-extrabold"
+            >
+              Our Latest Portfolio
+            </h1>
+            <p class="font-medium md:text-base text-sm text-textThree">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
           </div>
-              <!-- card Two  -->
-          <div class="bg-cardTwo p-6 space-y-2 rounded-2xl">          
-            <img src="assets/flow-chart.png" alt="icon">
-              <h2 class="card-title text-textTwo text-xl font-extrabold">Design Process</h2>
-              <p class="text-textThree font-medium">The barn house captivates with its blend of rustic charm and modern.</p>          
-          </div>
-              <!-- card three  -->
-          <div class="bg-cardThree p-6 space-y-2 rounded-2xl">          
-            <img src="assets/vision.png" alt="icon">
-              <h2 class="card-title text-textTwo text-xl font-extrabold">Supervision</h2>
-              <p class="text-textThree font-medium">The barn house captivates with its blend of rustic charm and modern.</p>          
-          </div>
-              <!-- card four  -->
-          <div class="bg-cardFour p-6 space-y-2 rounded-2xl">          
-            <img src="assets/budget-planning.png" alt="icon">
-              <h2 class="card-title text-textTwo text-xl font-extrabold">Budget Planning</h2>
-              <p class="text-textThree font-medium">The barn house captivates with its blend of rustic charm and modern.</p>          
-          </div>
+          <!-- card-container  -->
+           <div class="grid lg:grid-cols-8 lg:grid-rows-2 gap-6 md:grid-cols-2 grid-cols-1 md:"> 
+
+            <!-- card one  -->
+            <div class="flex border-2 md:flex-row flex-col px-5 py-5 gap-5 rounded-xl items-center lg:col-span-5 md:col-span-2">
+                <img src="assets/img1.png" alt="house" class="rounded-xl md:w-64 w-full md:h-44" />
+              <div class=" space-y-4 ">
+                <h2 class="font-extrabold text-xl md:text-2xl text-textThree">Commercial</h2>
+                <p class="font-medium text-textFour">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                <div class="">
+                  <button  class="  bg-transparent  ">
+                  <span class="font-black text-lg text-textOne pr-2">View Details</span>
+                  <i class="fa-solid fa-arrow-right text-textTwo -rotate-45 rounded-full p-2 text-center bg-btnPrimary"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- card two  -->
+            <div class=" border-2  px-5 py-5 gap-5 rounded-xl items-center lg:col-span-3">
+                <img src="assets/img2.png" alt="house" class="rounded-xl  w-full md:h-44" />
+              
+            </div>
+
+             <!-- card five lg:hidden -->
+             <div class=" border-2  px-5 py-5 gap-5 rounded-xl items-center lg:col-span-2 lg:hidden">
+              <img src="assets/img5.png" alt="house" class="rounded-xl  w-full md:h-44" />
+            
+            </div>
+
+            <!-- card three   lg:visible otherwise hidden-->
+            <div class=" border-2  px-5 py-5 gap-5 rounded-xl items-center lg:col-span-2  hidden lg:inline-block">
+                <img src="assets/img3.png" alt="house" class="rounded-xl  w-full md:h-44" />
+              
+            </div>
+
+            <!-- card four  -->
+            <div class="flex border-2 md:flex-row flex-col px-5 py-5 gap-5 rounded-xl items-center lg:col-span-4 md:col-span-2">
+                <img src="assets/img4.png" alt="house" class="rounded-xl md:w-64 w-full md:h-44" />
+              <div class=" space-y-4 ">
+                <h2 class="font-extrabold text-xl md:text-2xl text-textThree">Commercial</h2>
+                <p class="font-medium text-textFour">The barn house captivates with its blend of rustic charm and modern. </p>
+                <div class="">
+                  <button  class="  bg-transparent  ">
+                  <span class="font-black text-lg text-textOne pr-2">View Details</span>
+                  <i class="fa-solid fa-arrow-right text-textTwo -rotate-45 rounded-full p-2 text-center bg-btnPrimary"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- card three lg:hidden -->
+            <div class=" border-2  px-5 py-5 gap-5 rounded-xl items-center lg:col-span-2 lg:hidden">
+              <img src="assets/img3.png" alt="house" class="rounded-xl  w-full md:h-44" />
+            
+            </div>
 
 
-         </div>        
-       </section>
-       
+            
+            <!-- card five  -->
+            <div class=" border-2  px-5 py-5 gap-5 rounded-xl items-center lg:col-span-2">
+              <img src="assets/img5.png" alt="house" class="rounded-xl  w-full md:h-44" />
+            
+            </div>
+
+            
+
+
+
+           </div>
+        </div>
+      </section>
+
+
+      
     </main>
 
     <footer></footer>
