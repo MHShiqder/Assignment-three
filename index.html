@@ -41,6 +41,7 @@
               textThree: "#494949",
               textFour: "#737373",
               inputText: "#A0A0A0",
+              menuText: "#E9E9E9",
 
               backGround: "#F5F5F5",
               bannerBg: "rgba(255, 255, 255, 0)",
@@ -528,7 +529,10 @@
             </div>
             <!-- form container  -->
             <div>
-              <form action="" class="grid md:grid-cols-2 md:grid-rows-6 gap-6 grid-cols-1 grid-rows-8">
+              <form
+                action=""
+                class="grid md:grid-cols-2 md:grid-rows-6 gap-6 grid-cols-1 grid-rows-8"
+              >
                 <input
                   type="text"
                   placeholder="First Name*"
@@ -557,7 +561,9 @@
                   name=""
                   id=""
                   class="bg-white p-5 rounded-3xl font-medium text-inputText md:col-span-2 row-span-3 resize-none"
-                >Write your message here</textarea>
+                >
+Write your message here</textarea
+                >
 
                 <button
                   class="rounded-full bg-btnPrimary hover:bg-btnSecondary hover:border-btnPrimary hover:border-2 p-2 px-3 gap-2 lg:gap-1 md:col-span-2"
@@ -572,9 +578,79 @@
           </div>
         </div>
       </section>
-      
     </main>
 
-    <footer></footer>
+    <footer>
+      <!-- footer section  -->
+      <section class="bg-textTwo py-20">
+        <!-- width container  -->
+        <div class="w-11/12 lg:4/5 mx-auto">
+          <!-- raw text -->
+          <div class="space-y-7 relative text-center w-2/3 mx-auto pb-10">
+            <a href="#" class="text-xl"
+              ><i
+                class="fa-solid fa-arrow-right -rotate-45 bg-btnPrimary rounded-full p-2 text-center"
+              ></i>
+              <span class="font-black text-2xl text-white">Rinterio</span></a
+            >
+
+            <p class="font-medium md:text-base text-sm text-textFour">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <!-- menu section  -->
+          <div>
+            <ul class="flex flex-col md:flex-row px-1 gap-10 justify-center items-center">
+              <li>
+                <a href="#"
+                  class="hover:bg-textTwo hover:font-extrabold text-menuText text-base"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  class="hover:bg-textTwo hover:font-extrabold text-menuText text-base"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  class="hover:bg-textTwo hover:font-extrabold text-menuText text-base"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  class="hover:bg-textTwo hover:font-extrabold text-menuText text-base"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  class="hover:bg-textTwo hover:font-extrabold text-menuText text-base"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- button below  -->
+          <div class="text-center mt-10">
+            <button
+                class="btn rounded-full bg-btnPrimary hover:bg-btnPrimary border-none  p-2 px-4 gap-2 "
+              >
+                <span class="font-black text-lg text-textOne"
+                  >Book Consult</span
+                >
+                <i
+                  class="fa-solid fa-arrow-right text-white -rotate-45 bg-textTwo rounded-full p-2 text-center"
+                ></i>
+              </button>
+          </div>
+        </div>
+      </section>
+    </footer>
+    
   </body>
 </html>
